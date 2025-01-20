@@ -32,21 +32,21 @@ public class App {
                         car.status();
                         break;
                     case 2:
-                        System.out.println("Anna uusi auton merkki:");
+                        System.out.print("Anna uusi auton merkki:");
                         String newBrand = sc.nextLine();
                         car.setBrand(newBrand);
 
-                        System.out.println("Anna uusi auton malli:");
+                        System.out.print("Anna uusi auton malli:");
                         String newModel = sc.nextLine();
                         car.setModel(newModel);
                         break;
                     case 3:
-                        System.out.println("Kuinka monta km/h haluat kiihdyttää?");
+                        System.out.print("Kuinka monta km/h haluat kiihdyttää?");
                         int speedIncrease = Integer.parseInt(sc.nextLine());
                         car.accelerate(speedIncrease);
                         break;
                     case 4:
-                        System.out.println("Kuinka monta km/h haluat hidastaa?");
+                        System.out.print("Kuinka monta km/h haluat hidastaa?");
                         int speedDecrease = Integer.parseInt(sc.nextLine());
                         car.decelerate(speedDecrease);
                         break;
